@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CSCI 5607 Homework 4</title>
+</head>
+<body>
+    <header><img id="headerimage" src="images/gifs/headerimage4.gif"></header>
+    <main>
+        <h1>showcase of project 4: real-time 3D game programming</h1>
+        <h2>required features</h2>
+        <div>
+            <p>
+                1. continuous movement throughout the enviroment, with user input 
+            </p>
+            <small>
+                up and down keys move the camera forwards and backwards, left and right keys rotate camera left and right
+            </small>
+            <img src="images/gifs/movement.gif">
+        </div>
+        <div>
+            <p>
+                2. walls & doors have unique renderings
+            </p>
+            <small>
+                walls have brick texture, doors have wood texture
+            </small>
+            <br>     
+            <img src="images/png/walls_door_render.PNG">
+        </div>
+
+        <div>
+            <p>
+                3. keys are rendered as a teapot, and when a player picks them up, it is rendered in front of the camera
+            </p>
+            <img src="images/gifs/keys.gif">
+        </div>
+
+        <div>
+            <p>
+                4. collision detection, the player cannot walk through walls or locked doors
+            </p>
+            <img src="images/gifs/blocked.gif">
+        </div>
+        <p>
+            other features showcased:
+            <ul>
+                <li> floor rendered as black tiles </li>
+                <li> ambient and diffuse lighting in scene from shaders</li>
+            </ul>
+        </p>
+        
+        <h4>new maps</h4>
+        <div class="image-row">
+            <div class="image-container">
+                <small>
+                    topdown view of maze map (created from maze.txt)
+                </small>
+                <img src="images/png/topdown_view2.PNG">
+            </div>
+            <div class="image-container">
+                <small>
+                    topdown view of creeper map (created from creeper.txt)
+                </small>
+                <img src="images/png/topdown_view3.PNG">
+            </div>
+        </div>
+    
+        <div class="image-row">
+            <div class="image-container">
+                <small> video of me playing doors_w_key.txt</small>
+                <video width="320" height="240" controls>
+                    <source src="videos/gameplay.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    <br>
+    <h2>difficulties i encountered</h2>
+        <p id="difficulties">
+            i turned this project 3 days late because of a mismatch between how i was rendering my cube model and how i did the math inside my collistion detection. 
+            i lost 3+ days of debugging down to one fix in my code: shifting all the cubes by 0.5f... it was so frustrating diminishing my grade 20% because of one small bug. 
+            but shoutout stephen for sitting down and fixing it with me.
+            i think OpenGL and SDL rendering were very straightforward so i didn't have a problem with that. things like doors and keys were actually fun to code the logic for.
+        </p>
+    <a href="https://github.com/tracynpham/csci5607-project4-webpage/blob/main/project/project4.zip">
+        link to download project files
+    </a>
+</body>
+</html>

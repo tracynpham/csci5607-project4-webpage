@@ -1,0 +1,42 @@
+*{
+    background-color: #ffe8fa;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2{
+    text-decoration: underline;
+}
+
+img{
+    width: 300px;
+}
+#headerimage{
+    width: 60%;
+}
+.images{
+    display: flex;
+    gap: 50px;
+}
+.texture{
+    width: 200px;
+}
+#difficulties, #largeText{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-row {
+  display: flex;            
+  gap: 40px;                
+  align-items: flex-start;   
+  flex-wrap: wrap;       
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;   
+  text-align: center;
+}
